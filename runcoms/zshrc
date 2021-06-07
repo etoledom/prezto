@@ -11,3 +11,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+eval "$(rbenv init -)"
+
+export NVM_DIR="/Users/etoledo/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="~/Library/Android/sdk/platform-tools:$PATH"
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME="~/Library/Android/sdk"
+export PATH="${JAVA_HOME}/bin:$PATH"
